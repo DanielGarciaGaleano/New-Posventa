@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Honda academia</title>
+    <link rel="stylesheet" href="../front/css/normalize.css">
+    <link rel="stylesheet" href="../front/css/index.css">
+    <link rel="stylesheet" href="../front/css/historico.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts" type="module"></script>
+</head>
+
+<body>
+
+    <aside>
+
+        <img class="logo_principal" src="/assets/logo_dashboard.png" alt="logo honda academia dashboard" />
+        <div class="Navegacion_dashboard">
+            
+            <div id="Barra_navegacion">
+                <h2>Historico</h2>
+            </div>
+
+            <div id="Todos_los_cursos">
+                <a class="opcionNavegation" href="index.html" target="_self">
+                    <img class="iconRaking" src="./assets/svg/iconCurso.svg" alt="Icono del Raking" title="Raking Dashboard Honda Academia">
+                    <h3 class="titleRanking">Ver Cursos</h3>  
+                </a>
+                <a class="opcionNavegation" border_="upper" href="ranking.html" target="_self">
+                    <img class="iconRaking" src="./assets/svg/ranking.svg" alt="Icono del Raking" title="Raking Dashboard Honda Academia">
+                    <h3 class="titleRanking">Ver Ranking</h3> 
+                </a>
+                
+                <a class="opcionNavegation" border_="upper" href="cumplimiento.html" target="_self">
+                    <img class="iconHistoric" src="./assets/svg/cumplimiento.svg" alt="">
+                    <h3 class="titleRanking">Ver Cumplimiento</h3> 
+                </a>
+            </div>
+
+        </div>
+
+    </aside>
+    
+    <main class="main">
+
+        <!-- Logo y filtros -->
+        <div class="Logo_filtros">
+            <div class="logo"></div>
+            <div class="filtros">
+                <div class="containerFiltros_grid">
+                    <label for="Nombre">Nombre:</label>
+                    <select class="FiltroNombre" name="Nombre" )>
+                        <option value="undefined">Elija nombre</option>
+                    </select>
+                </div>
+                
+                <div class="containerFiltros_grid">
+                    <label for="Ciudad">Ciudad:</label>
+                    <select class="FiltroCiudad" name="Ciudad" >
+                        <option value="undefined">Ciudad</option>
+                    </select>
+                </div>
+                
+                <div class="containerFiltros_grid">
+                    <label for="Grupo">Grupo:</label>
+                    <select class="FiltroGrupo" name="Grupo" >
+                        <option value="undefined">Seleccione un Grupo</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                
+                <div class="containerFiltros_grid">
+                    <label for="GerenteRegional">Gerente Regional:</label>
+                    <select class="FiltroRegional" name="GerenteRegional" >
+                        <option value="undefined">Seleccione un Gerente Regional</option>
+                    </select>
+                </div>
+
+                <div class="containerFiltros_grid">
+                    <label for="RazonSocual">Razon social:</label>
+                    <select class="FiltroRazonSocial" name="RazonSocial" >
+                        <option value="undefined">Seleccione una Razon Social</option>
+                    </select>
+                </div>
+
+                <div class="containerFiltros_grid">
+                    <label for="start">Fechas</label>
+                    <div class="FiltroFecha"> 
+                        <input type="date" id="startDate" name="trip-start" value="2022-09-20" min="2022-09-01"
+                            max="2022-09-30" onchange="UpdateEndDate();">
+
+                        <input type="date" id="endDate" name="trip-start" value="2022-09-20" min="2022-09-01"
+                            max="2022-09-30" onchange="UpdateEndDate();">
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Contenido de todo el curso -->
+        <div class="Historico">
+            <!-- Grilla 1 -->
+            <div class="RankingTotal">
+                <h2 class="titleHistorico">Historico Cursos </h2>
+                <div class="HistoricoNotas"></div>   
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+<script src="/front/scripts/historico.js"></script>
+
+</body>
+
+</html>

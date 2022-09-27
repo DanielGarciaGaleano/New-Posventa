@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Honda academia</title>
+    <link rel="stylesheet" href="../front/css/normalize.css">
+    <link rel="stylesheet" href="../front/css/index.css">
+    <link rel="stylesheet" href="../front/css/cumplimiento.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts" type="module"></script>
+</head>
+
+<body>
+
+    <aside>
+
+        <img class="logo_principal" src="/assets/logo_dashboard.png" alt="logo honda academia dashboard" />
+        <div class="Navegacion_dashboard">
+            
+            <div id="Barra_navegacion">
+                <h2>Cumplimiento</h2>
+            </div>
+
+            <div id="Todos_los_cursos">
+                <a class="opcionNavegation" href="index.html" target="_self">
+                    <img class="iconRaking" src="./assets/svg/iconCurso.svg" alt="Icono del Raking" title="Raking Dashboard Honda Academia">
+                    <h3 class="titleRanking">Ver Cursos</h3>  
+                </a>
+                <a class="opcionNavegation" border_="upper" href="historico.html" target="_self">
+                    <img class="iconHistoric" src="./assets/svg/historico.svg" alt="">
+                    <h3 class="titleRanking">Ver Historico</h3> 
+                </a>
+
+                <a class="opcionNavegation" border_="upper" href="ranking.html" target="_self">
+                    <img class="iconRaking" src="./assets/svg/ranking.svg" alt="Icono del Raking" title="Raking Dashboard Honda Academia">
+                    <h3 class="titleRanking">Ver Ranking</h3> 
+                </a>
+                <div style="width:100%; height:20px; background-color:red "></div>
+                
+            </div>
+                <a href="./iframes/avance-general.html" target="content"  class="cumplimiento" id="general1">
+                    Avance General 
+                </a>
+
+                <a href="./iframes/avance-agencia.html" target="content" class="cumplimiento" id="general2">
+                    Avance Agencias
+                </a>
+
+                <a href="./iframes/avance-razon.html" target="content" class="cumplimiento" id="general3">
+                    Avance Razon Social
+                </a>
+
+                <a href="./iframes/avance-colaboradores-gsm.html" target="content" class="cumplimiento" id="general4">
+                    Avance Colaboradores GSM
+                </a>
+
+                <a href="./iframes/avance-colaboradores-dist.html" target="content" class="cumplimiento" id="general5">
+                    Avance Colaboradores Distribuidores
+                </a>
+        </div>
+
+    </aside>
+    
+    <main class="main">
+    
+        <iframe class ="iframe" src="./iframes/avance-general.html" style="height:100vh; width:100%" name="content"></iframe>
+      
+
+
+
+
+    </main>
+    <script src="/front/scripts/cumplimiento.js"></script>
+
+
+</body>
+
+</html>

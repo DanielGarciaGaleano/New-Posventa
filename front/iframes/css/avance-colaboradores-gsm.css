@@ -1,0 +1,143 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.iframe__filtros {
+    height: 120px;
+    width: 100%;
+
+    margin-bottom: 30px;
+}
+
+.iframeTable {
+    width: 95%;
+    max-height: 600px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.iframeTable_tableName {
+    text-align: center;
+    width: 100%;
+    background-color: red;
+    border-top-left-radius: 10px;
+    padding: 10px 0px;
+    color: white;
+    margin: 0;
+}
+
+.iframeTable_iterableContent {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border: 1px solid grey;
+}
+
+.iframeTable_subtitle {
+    text-align: center;
+    padding: 10px 0px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    border-right: 1px solid grey;
+    color: red;
+    font-weight: 600;
+}
+
+.iframe_content__fetch {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(7, 1fr);
+    align-content: center;
+    justify-items: center;
+    border-left: solid grey 1px;
+}
+
+.iframe_content__fetch p {
+
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0px;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+.iframe_content__total {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.total_titulo {
+    grid-column: 1/4;
+    height: max-content;
+    padding: 10px 0px;
+    text-align: center;
+    margin: 0;
+    width: 99%;
+    font-weight: 600;
+    color: white;
+    background-color: red;
+    border-bottom-left-radius: 10px;
+}
+
+.procent1 {
+    width: 100%;
+    height: max-content;
+    margin: 0;
+    padding: 10px 0px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    color: red;
+    font-weight: 600;
+    transform: translateX(-4%);
+}
+
+.porcent2 {
+    width: 100%;
+    height: max-content;
+    margin: 0;
+    padding: 10px 0px;
+    text-align: center;
+    border: 1px solid grey;
+    border-top: none;
+    transform: translateX(-4%);
+}
+
+.filtros {
+    height: 100%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5px;
+    column-gap: 5px;
+    margin: 0 auto;
+}
+
+.containerFiltros_grid {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+[promedio="amarillo"]{
+    background-color: yellow;
+    color: black;
+  }
+
+  [promedio="verde"]{
+    background-color: green;
+    color: white;
+  }
+
+  [promedio="rojo"]{
+    background-color: red;
+    color: white;
+  }

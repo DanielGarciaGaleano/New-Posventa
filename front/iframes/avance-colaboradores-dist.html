@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/normalice.css">
+    <link rel="stylesheet" href="./css/avance-colaboradores-dist.css">
+
+</head>
+<body>
+    <div class="iframe__filtros">
+        <div class="filtros">
+            <div class="containerFiltros_grid">
+                <label for="Nombre">Nombre:</label>
+                <select class="FiltroNombre" name="Nombre" )>
+                    <option value="undefined">Elija nombre</option>
+                </select>
+            </div>
+            
+            <div class="containerFiltros_grid">
+                <label for="Ciudad">Ciudad:</label>
+                <select class="FiltroCiudad" name="Ciudad" >
+                    <option value="undefined">Ciudad</option>
+                </select>
+            </div>
+            
+            <div class="containerFiltros_grid">
+                <label for="Grupo">Grupo:</label>
+                <select class="FiltroGrupo" name="Grupo" >                        
+                    <option value="undefined">Seleccione un Grupo</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            
+            <div class="containerFiltros_grid">
+                <label for="GerenteRegional">Gerente Regional:</label>
+                <select class="FiltroRegional" name="GerenteRegional" >
+                    <option value="undefined">Seleccione un Gerente Regional</option>
+                </select>
+            </div>
+
+            <div class="containerFiltros_grid">
+                <label for="RazonSocual">Razon social:</label>
+                <select class="FiltroRazonSocial" name="RazonSocial" >
+                    <option value="undefined">Seleccione una Razon Social</option>
+                </select>
+            </div>
+            <div class="containerFiltros_grid">
+                <label for="start">Fechas</label>
+                <div class="FiltroFecha"> 
+                    <input type="date" id="startDate" name="trip-start" value="2022-09-20" min="2022-09-01"
+                        max="2022-09-30" onchange="UpdateEndDate();">
+
+                    <input type="date" id="endDate" name="trip-start" value="2022-09-20" min="2022-09-01"
+                        max="2022-09-30" onchange="UpdateEndDate();">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="iframeTable">
+        <h1 class="iframeTable_tableName">Avance Colaboradores Distribuidores</h1>
+        <div class="iframeTable_iterableContent">
+            <p class="iframeTable_subtitle">No.</p>
+            <p class="iframeTable_subtitle">Zona</p>
+            <p class="iframeTable_subtitle">Regional</p>
+            <p class="iframeTable_subtitle">Grupo</p>
+            <p class="iframeTable_subtitle">Nombre</p>
+            <p class="iframeTable_subtitle">Cantidad Cursos</p>
+            <p class="iframeTable_subtitle">Aprobados</p>
+            <p class="iframeTable_subtitle">Avance</p>
+        </div>
+        <div class="iframe_content__fetch">
+         
+        </div>
+    </div>
+
+    <script src="/front/iframes/scripts/avance-colaboradores-dist.js"></script>
+</body>
+</html>

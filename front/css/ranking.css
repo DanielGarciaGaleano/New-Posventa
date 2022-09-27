@@ -1,0 +1,51 @@
+.ContenidoRanking{
+    padding-top: 50px;
+    display: grid;
+
+}
+
+.RankingTotal, .RankingExamenes80 , .Actividades20{
+    width: 90%;
+    margin: 0 auto;
+    height: 70vh;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 3px 15px 5px rgba(124, 124, 124, 0.41); 
+    box-shadow: 1px 3px 15px 5px rgba(124, 124, 124, 0.41);
+}
+
+.RankingExamenes h3 , .RankingActividades h3{ 
+    margin: auto;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 5px 0px;
+    border-bottom: 1px grey solid;
+    width: 100%;
+    text-align: center;
+}
+
+.titleRankingTotal{
+    background-color: red;
+    color: white;
+    text-align: center;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px 0px;
+    font-size: 18px;
+}
+
+select{
+    border: solid 1px red;
+    border-radius: 5px;
+    height: max-content;
+ }
+
+ .filtros {
+    height: 100%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 5px;
+    column-gap: 5px;
+    margin: 0 auto;
+}

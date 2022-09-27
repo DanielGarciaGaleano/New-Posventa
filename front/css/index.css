@@ -1,0 +1,398 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+aside {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 9px -1px 5px -7px rgba(102, 99, 102, 1);
+    -moz-box-shadow: 9px -1px 5px -7px rgba(102, 99, 102, 1);
+    box-shadow: 9px -1px 5px -7px rgba(102, 99, 102, 1);
+    z-index: 1;
+}
+
+.logo_principal {
+    width: 70%;
+    margin: auto;
+    height:100px
+}
+
+.Navegacion_dashboard {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#Barra_navegacion {
+    height: 50px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#Barra_navegacion h2 {  
+    color: white;
+    margin: 0;
+}
+
+#Todos_los_cursos {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    display:grid;
+    cursor: pointer;
+}
+
+
+.main {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.Logo_filtros {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    -webkit-box-shadow: 1px 7px 15px 2px rgba(0,0,0,0.57); 
+    box-shadow: 1px 7px 15px 2px rgba(0,0,0,0.57);
+}
+
+.Logo {
+    display: flex;
+    height: 20px;
+    width: auto;
+}
+
+.filtros {
+    height: 100%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 5px;
+    column-gap: 5px;
+    margin: 0 auto;
+}
+
+.containerFiltros_grid{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contenido_curso {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+}
+
+.Grilla1 {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.contentGrilla1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.Inscritos, .Completados{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    margin: 0 auto;
+    -webkit-box-shadow: 1px 7px 15px 2px rgba(0,0,0,0.57); 
+    box-shadow: 1px 7px 15px 2px rgba(0,0,0,0.57);
+    border-radius: 10px;
+}
+
+.iconInscritos, .iconCompletados{
+    width: 25%;
+    margin: 10px 0 0px 0px;
+}
+
+.tittleInscritos, .tittleCompletados{
+    margin: 0; 
+    width: 100%;
+    background-color:red;
+    text-align: center;   
+    color: white;
+}
+
+.NumeroInscritos,.NumeroCompletados{
+    margin: 0 0 10px 0px;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(65, 65, 65);
+}
+
+.Pie {
+    width:100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.Grilla2 {
+    width: 85%;
+    margin: auto;
+    height: 350px ;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    grid-column: 2/4;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 7px 15px 2px rgba(0,0,0,0.57); 
+    box-shadow: 1px 7px 15px 2px rgba(0,0,0,0.57);
+}
+
+.Grilla2 h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    background-color: red;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.Contenido_iterable {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow-y: scroll;  
+}
+
+.Grilla3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    grid-row: 2/3;
+    grid-column: 1/4;
+}
+
+.Categoria1,.Categoria2, .Categoria3,.Categoria4,.Categoria5 {
+    width: 85%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.titleCat{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: red;
+    color: white;
+    padding: 5px 0px;
+    border-radius: 5px;
+}
+
+.Ranking {
+    width: 100%;
+    height: max-content;
+    grid-template-columns: 70% 30%;
+    display: grid;
+}
+
+.Ranking h3{
+    margin: auto;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 5px 0px;
+    border-bottom: 1px grey solid;
+    width: 100%;
+}
+
+
+
+.Nombres_usuarios{
+    width: 100%;
+    height: auto;
+
+}
+
+.Nombres_usuarios{
+    height: 100%;
+    border-style: outset;
+}
+
+.Resultados_curso{
+    height: 100%;
+    border-style: outset;
+} 
+
+.RankingExamenes {
+    width: 100%;
+    height: 50px;
+    grid-template-columns: 70% 30%;
+    display: grid;  
+ }
+
+ .classTitle{
+    margin: 0;
+    width: 90%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+ }
+
+ .contentNamesCourses{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 15px;
+    width:100%;
+    height:25px;
+    padding-bottom:10px ;
+    border-bottom: 1px solid grey;
+ }
+
+ .cursos{
+    margin-left: 10px;
+ }
+
+ input[type="radio"]{
+    appearance: none;
+    background-color: white;
+    margin: 0 0 0 10px;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+    
+ }
+
+ input[type="radio"]:focus {
+    outline: max(2px, 0.15em) solid red;
+    border: 0.15em solid red;
+    background-color:red;
+    outline-offset: max(2px, 0.15em);
+  }
+
+  .opcionNavegation{
+    outline:none;
+    text-decoration: none;
+    color:black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 25px;
+    padding:10px 0px;
+  }
+
+  .titleRanking{
+    padding: 0;
+    color: rgb(77, 77, 77);
+    transition: all .5s ease;
+    font-size: 18px;
+    margin: 5px 0px;
+  }
+
+  .opcionNavegation:first-of-type{
+    margin-top: 20px;
+  }
+
+  .opcionNavegation:last-of-type{
+    padding-top: 15px;
+  }
+
+  .titleRanking:hover{
+    transform: scale(1.2);
+    transition: all .5s ease;
+  }
+
+  .iconRaking,.iconHistoric{
+    width: 10%;
+  }
+
+  .apartCursos{
+    background-color: red;
+    width: 100%;
+    margin: 0;
+    padding:10px 0px;
+    text-align: center;
+    color: white;
+  }
+
+
+
+.RankingActividades {
+    width: 100%;
+    height: 50px;
+    grid-template-columns: 70% 30%;
+    display: grid;  
+ }
+
+ .HistoricoNotas{
+    width: 90%;
+    margin: 0 auto;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 30% 15% 10% 25% 20%;
+ }
+ .CumplimientoGeneral{
+    width: 90%;
+    margin: 0 auto;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 70% 30%;
+ }
+ .Name{
+    color:red
+ }
+ .Calificacion{
+    color:red
+ }
+ .Curso{
+    color:red
+ }
+ .Concesionario{
+    color:red
+ }
+ .Intento{
+    color:red
+ }
+
+ select{
+    border: solid 1px red;
+    border-radius: 5px;
+    height: max-content;
+ }
+
+ [border_="upper"]{
+    border-top: solid 1px grey;
+ }
