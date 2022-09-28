@@ -1,5 +1,5 @@
 // Constantes del servidor 
-let server = `http://localhost:3589/api/v1`;
+let server = `https://posventa-dashboard.herokuapp.com/`;
 
 let listado_cursos = [];
 let listado_notas = [];
